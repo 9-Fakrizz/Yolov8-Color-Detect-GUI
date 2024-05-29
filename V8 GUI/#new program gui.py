@@ -153,7 +153,7 @@ def start_detection():
         count += 1
         if count % 5 != 0:
             continue
-
+        data = []
         frame = cv2.resize(frame, (600, 400))
         results = model.predict(frame)
         if(results):
